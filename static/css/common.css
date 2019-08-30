@@ -1,0 +1,245 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+}
+html,body{
+    height: 100%;
+    font-size: 16px;
+}
+/* display: flex布局 */
+.disFlex{
+	display: flex;
+	display: -moz-flex;
+	display: -webkit-flex; 
+	display: -ms-flexbox;
+}
+.flex1{
+    flex:1;
+
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.text-center{
+    text-align:center !important;
+}
+.text-left{
+    text-align:left !important;
+}
+.text-right{
+    text-align:right !important;
+}
+*{
+    box-sizing: border-box;
+}
+a {
+    color: #7e8c8d;
+    text-decoration: none;
+}
+ul,ol,li {
+    list-style: none;
+}
+.box100{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.ht100{
+    height: 100%;
+}
+.icon_more{
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top-color: #000;
+}
+.is-active{
+  background: red;
+}
+/* 绿色系样式 */
+/* 适用于字体图标 */
+.colorWhite{
+    color: #fff;
+}
+.greenLg{
+    color: #1DA29A;
+}
+.greenWg{
+    color: #006754;
+}
+/* 适用于按钮 */
+.greenLgBtn,.wrapper .greenLgBtn{
+    background-color: transparent;
+    border:1px solid #1DA29A;
+    color: #1DA29A;
+    border-radius: 5px;
+}
+.greenLBcgBtn,.wrapper .greenLBcgBtn{
+    background-color: #1DA29A;
+    border:1px solid #1DA29A;
+    color: #fff;
+    border-radius: 5px;
+}
+.greenWgBtn,.wrapper .greenWgBtn,.deleteBtn,.wrapper .deleteBtn{
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+.greenWgBtn,.wrapper .greenWgBtn{
+    background-color: #006754;
+}
+.deleteBtn,.wrapper .deleteBtn{
+    background-color: #FF0000;
+}
+/* 背景色 */
+.bgGray{
+    background-color: #F2F2F2;
+}
+.bgGrayLg{
+    background-color: #F5F5F5;
+}
+/* 边框颜色 */
+.borderGray{
+    border: 1px solid #E4E4E4;
+}
+.borderGrayLg{
+    border: 1px solid #E9E9E9;
+}
+/* 字体颜色 */
+.fontColor1{
+    color: #CCCCCC;
+}
+.fontColor2{
+    color: #999999;
+}
+.fontColor3{
+    color: #666666;
+}
+.fontColor4{
+    color: #333333;
+}
+/* 修改ant组件样式 */
+.centerBox .van-tabs__nav--card .van-tab{
+    color: #1DA29A;
+    border-right-color: #1DA29A;
+}
+.centerBox .van-tabs__nav--card .van-tab.van-tab--active{
+    background-color: #1DA29A;
+}
+.centerBox .van-tabs__nav--card{
+    border:1px solid #1DA29A;
+}
+/* 头部保存按钮 重颜色*/
+.titSaveBtn .van-nav-bar__right{
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    background-color: #006754;
+    color: #fff;
+    bottom: 8px;
+  }
+  .titSaveBtn .van-nav-bar__right span{
+      color:#fff;
+  }
+/*导航栏保存按钮 浅颜色*/
+.van-button--default.btnSave {
+    background: #1da29a;
+    color: #fff ;
+    border-radius: 5px;
+    min-width: 4.2rem;
+    border: none;
+}
+.van-tabs__wrap .van-tab span{
+    display: inline;
+}
+.van-tabs__wrap .van-tabs__nav--card .van-tab{
+     height: 100%;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     line-height: 30px;
+}
+/* 导航栏 */
+/* 自定义tab标签样式 */
+.typeCardBox .van-button{
+    border-right-width: 0px;
+}
+.typeCardBox .van-button:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+ }
+ .typeCardBox .van-button:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right-width: 1px;
+ }
+.centerBox  .van-nav-bar__left .van-nav-bar__text{
+    color:#1DA29A;
+}
+.centerBox .van-nav-bar .van-icon-arrow-left{
+    color:#1DA29A;
+    font-size:16px;
+}
+/* tab切换 默认样式采用定位*/
+.van-tabs__wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    overflow: hidden;
+}
+/*全部图标*/
+/*弹窗确认取消键*/
+.centerBox .van-picker__confirm{
+    color:#1DA29A;
+}
+.centerBox .van-picker__cancel{
+    color:#1DA29A;
+}
+/*头部左箭头和文字*/
+.centerBox .van-nav-bar__left .van-nav-bar__text{
+    color:#1DA29A;
+}
+.centerBox .van-nav-bar .van-icon-arrow-left{
+    color:#1DA29A;
+    font-size:16px;
+}
+/*小铃铛图标*/
+.centerBox .van-nav-bar .van-nav-bar__left .van-icon-bell{
+    color:#1DA29A;
+}
+/*底栏图标*/  /*修改组件样式必须找准其父级类名*/
+.centerBox .van-tabbar .van-tabbar-item--active{
+    color:#1DA29A;
+}
+/*下拉菜单*/
+.centerBox  .van-popup .van-cell--clickable .van-cell__title{
+    text-align: left;
+    flex: 8;
+}
+.van-toast--text.redToast{
+    background-color: red;
+  }
